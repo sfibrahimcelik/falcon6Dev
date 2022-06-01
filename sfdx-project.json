@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "falcon6Dev",
+  "namespace": "",
+  "sfdxLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "54.0"
+}

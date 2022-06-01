@@ -1,0 +1,1 @@
+TurkishLesson7.createAcc('Account Demo2', 100000);

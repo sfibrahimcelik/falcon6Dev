@@ -1,0 +1,16 @@
+Select id, Name, MailingCity From Contact Where Name LIKE 'A%'
+Select id, Name, MailingCity From Contact Where Name LIKE '%B%'
+Select id, Name, MailingCity From Contact Where Name LIKE '%C'
+
+Select ID, name From Account Order By Name DESC
+
+Select ID, name, Industry from Account where industry ='Energy'
+
+Select ID, name, Industry from Account where industry ='Energy' limit 2
+
+Select ID, Name, status__c from salesforce_project__c where status__c !='New'
+
+Select ID, Name, Phone  From Account Where phone != Null and AccountNumber!= Null
+
+Select Id, Name, Subject__c, status__c, priority__c from Salesforce_ticket__c where status__c !='' and priority__c!=''
+

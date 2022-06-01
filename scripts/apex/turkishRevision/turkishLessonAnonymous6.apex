@@ -1,0 +1,1 @@
+TurkishLesson6.asdf();
