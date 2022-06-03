@@ -3,7 +3,7 @@ public with sharing class AccountQueueableExample implements Queueable{
 
     public AccountQueueableExample(List<Account> accList){
         listAccount= accList;
-
+//Contrubute some codes
     }
 
     public void execute(QueueableContext qc){
@@ -13,3 +13,4 @@ public with sharing class AccountQueueableExample implements Queueable{
         update listAccount;
     } 
 }
+// controling
