@@ -15,9 +15,6 @@ public class primitiveDataTypeDemo2 {
         Datetime dt5= DateTime.newInstanceGMT(1998, 1, 28, 18, 02, 03 );
         system.debug(dt5);
 
-        Datetime dt6= Datetime.newInstance(0);
-        system.debug('dt6= '+dt6);
-
     }
     public void printNewTime(){
         Time myTime= Time.newInstance(18, 20, 2, 30);

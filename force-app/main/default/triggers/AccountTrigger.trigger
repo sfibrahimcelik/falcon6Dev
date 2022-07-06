@@ -1,15 +1,10 @@
-trigger AccountTrigger on Account (before insert, before update, after insert, after update) {
-    if(trigger.isBefore){
-        system.debug('before insert/update trigger called');
-        AccountTriggerHandler.updateAccountDescription(Trigger.New, Trigger.Old, Trigger.NewMap, Trigger.OldMap);
-        system.debug('before insert/update trigger end.');
-        
-    }
-    if(trigger.isAfter && trigger.isUpdate){
-        AccountTriggerHandler.updateVipForAllAcontacts(Trigger.New, Trigger.Old, Trigger.NewMap, Trigger.OldMap);
+trigger AccountTrigger on Account (After Insert, After Update) {
+    if(Trigger.isAfter){
+        if(Trigger.isUpdate || Trigger.isInsert){
+            AccountTriggerHandler.getKanyeQuote(Trigger.New, Trigger.oldMap);
+        }
     }
 }
-
 
 
 //trigger AccountTrigger on Account( before insert, before update, after insert, after update){
@@ -261,4 +256,3 @@ trigger AccountTrigger on Account (before insert, before update, after insert, a
 //         system.debug('accout id is = ' + acc.Id + ', account name is ' + acc.Name);
 //     }
 // }
-

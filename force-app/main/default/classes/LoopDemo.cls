@@ -20,8 +20,5 @@ public  class LoopDemo {
         system.debug('summation is '+sum);
         return sum;
     }
-    public void print_N_Odd_numbers(integer startInt, integer endInt){
-        
-    }
 
 }

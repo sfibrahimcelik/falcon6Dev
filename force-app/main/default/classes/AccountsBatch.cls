@@ -1,6 +1,5 @@
 public class AccountsBatch implements Database.Batchable<SObject>, database.stateful{
     public integer count = 0;
-    
     public Database.QueryLocator start(database.BatchableContext bc){
         database.QueryLocator q1 = database.getQueryLocator([select id,  description,active__c from account]);
         system.debug(q1);

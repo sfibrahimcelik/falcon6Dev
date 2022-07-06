@@ -38,5 +38,9 @@ public class DatetimeMethodsDemo {
         system.debug(ageInDays);
     }
 
-    
+    public integer add(integer a, integer b){
+        integer sum1 = a+b;
+        return sum1;
+
+    }
 }
