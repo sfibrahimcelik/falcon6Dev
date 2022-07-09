@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title = "Practice Track">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+            type="text"
+            label="Enter your company that you currently worked"
+            value={details.company}
+            onkeyup={handleChange}>
+        </lightning-input>
+        <div class="slds-var-m-around_small"> Hi, Im currently working on {details.company}
+
+        </div>
+        </div>
+    </lightning-card>
+    
+</template>

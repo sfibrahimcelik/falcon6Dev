@@ -8,7 +8,13 @@ export default class HelloWorld extends LightningElement {
         city: "Houston",
         country: "US",
         postalCode:"50033"
+
     };
     fruits = ["Banana", "Orange", " Pomegranate", 
-'Pineapple'];//array
+    'Pineapple'];//array
+
+// write methods
+    getLocation(){
+        return location.city;
+    }
 }
